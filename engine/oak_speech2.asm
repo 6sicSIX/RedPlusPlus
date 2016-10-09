@@ -205,21 +205,21 @@ DefaultNamesPlayer: ; 6aa8 (1:6aa8)
 	db   "NEW NAME"
 	next "RED"
 	next "ASH"
-	next "JACK"
+	next "(SiC)"
 	db   "@"
 	
 DefaultNamesGirl:
 	db   "NEW NAME"
 	next "GREEN"
 	next "ASHLEY"
-	next "NICOLE"
+	next "(SiC)"
 	db   "@"
 
 DefaultNamesRival: ; 6abe (1:6abe)
 	db   "NEW NAME"
 	next "BLUE"
 	next "GARY"
-	next "JOHN"
+	next "FATCUNT"
 	db   "@"
 
 Func_6ad6: ; 6ad6 (1:6ad6)
@@ -245,11 +245,11 @@ Func_6ad6: ; 6ad6 (1:6ad6)
 	jp CopyData
 
 DefaultNamesPlayerList: ; 6af2 (1:6af2)
-	db "NEW NAME@RED@ASH@JACK@"
+	db "NEW NAME@RED@ASH@(SiC)@"
 DefaultNamesRivalList: ; 6b08 (1:6b08)
-	db "NEW NAME@BLUE@GARY@JOHN@"
+	db "NEW NAME@BLUE@GARY@FATCUNT@"
 DefaultNamesGirlList:
-	db "NEW NAME@GREEN@ASHLEY@NICOLE@"
+	db "NEW NAME@GREEN@ASHLEY@(SiC)@"
 
 TextTerminator_6b20: ; 6b20 (1:6b20)
 	db "@"
