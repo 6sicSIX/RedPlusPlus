@@ -107,7 +107,9 @@ rLCDC_DEFAULT EQU %11100011
 	dec a
 	ld [wUpdateSpritesEnabled], a
 
+IF HACK_SKIP_INTRO == 0
 	predef PlayIntro
+ENDC
 
 	call DisableLCD
 	call ClearVram
