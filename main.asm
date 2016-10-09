@@ -72,8 +72,8 @@ INCLUDE "engine/battle/safari_zone.asm"
 
 INCLUDE "engine/titlescreen.asm"
 
-NintenText: db "NINTEN@"
-SonyText:   db "SONY@"
+NintenText: db "(SiC)@"
+SonyText:   db "FATCUNT@"
 
 
 LoadMonData_:
