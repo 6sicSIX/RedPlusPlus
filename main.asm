@@ -7435,7 +7435,6 @@ INCLUDE "engine/splashscreens/splashscreen_main.asm"
 INCLUDE "engine/splashscreens/programmer.asm"
 INCLUDE "engine/splashscreens/tetris.asm"
 INCLUDE "engine/splashscreens/gamescript.asm"
-INCLUDE "engine/splashscreens/mateo_presents.asm"
 INCLUDE "engine/splashscreens/version_screen.asm"
 INCLUDE "engine/splashscreens/players_in_intro.asm"
 
