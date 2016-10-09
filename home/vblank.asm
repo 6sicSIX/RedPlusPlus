@@ -73,6 +73,12 @@ VBlank::
 .afterMusic
 
 	callba TrackPlayTime ; keep track of time played
+	
+IF HACK_ENABLE_DEBUG_MODE == 1
+	ld a,[wd732]
+	set 1,a ;enable debug mode
+	ld [wd732],a
+ENDC
 
 	ld a, [$fff9]
 	and a
