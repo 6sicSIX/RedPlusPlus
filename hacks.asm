@@ -11,6 +11,8 @@
 ; 1: fast walking (always run).
 ; 2: normal walking; hold B to run (anywhere)
 ; 3: normal walking; hold B to run (only outdoors/on maps that allow biking)
+;###############################################
+;	ALREADY IMPLIMENTED
 HACK_RUNNING_SHOES EQU 2
 
 
@@ -19,6 +21,8 @@ HACK_RUNNING_SHOES EQU 2
 ; 0: normal speed
 ; 1: high speed
 ; 2: ludicrous speed
+;###############################################
+;	NOT IN USE
 HACK_SPEED_UP_OVERWORLD EQU 0
 
 
@@ -26,10 +30,15 @@ HACK_SPEED_UP_OVERWORLD EQU 0
 ; 0: leave it alone
 ; 1: disable it completely
 ; 2: beep a few times then stop
+;###############################################
+;	NOT IN USE
 HACK_LOW_HEALTH_ALARM EQU 2
 
 ;how many times to beep, with mode 2 (1 to 127)
+;###############################################
+;	NOT IN USE
 HACK_LOW_HEALTH_ALARM_COUNT EQU 2
+
 
 
 ; hack to enhance the battle screen:
@@ -40,29 +49,41 @@ HACK_LOW_HEALTH_ALARM_COUNT EQU 2
 ; Planned enhancements:
 ; * EXP bars
 ; * Display a move's category (physical/special/status)
+;###############################################
+;	NOT IN USE - NOT ENOGUH SPACE
 HACK_ENHANCE_BATTLE_SCREEN EQU 1
 
 
 ;show the "stats/switch/cancel" menu when switching mons in battle.
 ;normally it doesn't show when choosing a mon after yours or an opponent's
 ;has fainted, which is annoying because you can't check stats.
+;###############################################
+;	NOT IN USE - MAY ALREADY BE IMPLIMENTED
 HACK_BATTLE_PARTY_STATS_MENU EQU 1
 
 
 ;allow to press left/right to adjust quantity by 10 when
 ;buying/selling/tossing an item
+;###############################################
+;	NOT IN USE - NOT ENOUGH SPACE
 HACK_ADJUST_ITEM_QTY_BY_10 EQU 1
 
 
 ;when buying items, show how many you already have
+;###############################################
+;	NOT IN USE - MAY ALREADY BE IMPLIMENTED
 HACK_SHOW_OWNED_ITEM_COUNT EQU 1
 
 
 ;allow to set the text speed anywhere from 0 to 7 frames per letter
+;###############################################
+;	NOT IN USE - NOT NEEDED
 HACK_FULL_TEXT_SPEED_OPTION EQU 1
 
 
 ;make the default text speed the fastest setting (no delay)
+;###############################################
+;	NOT IN USE - NOT NEEDED
 HACK_DEFAULT_TEXT_SPEED_FAST EQU 1
 
 
@@ -71,9 +92,13 @@ HACK_TEXT_NO_DELAY EQU 1
 
 
 ;allow to use HMs from the overworld by "talking" to bushes, water, rocks etc.
+;###############################################
+;	NOT IN USE - ALREADY IMPLIMENTED
 HACK_USE_HM_FROM_OVERWORLD EQU 1
 
 ;allow to use HMs from the overworld without HMs or badges
+;###############################################
+;	NOT IN USE - NOT NEEDED
 HACK_USE_HM_FROM_OVERWORLD_DEBUG EQU 1
 
 ; Enable the original debug mode (bit 1 of wd732)
