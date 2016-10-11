@@ -50,6 +50,9 @@ MainMenu: ; 5af2 (1:5af2)
 	ld de,NewGameText
 	call PlaceString
 .next2
+IF HACK_SKIP_TITLE == 1
+	jr .next5
+ENDC
 	ld hl,wd730
 	res 6,[hl]
 	call UpdateSprites ; OAM?

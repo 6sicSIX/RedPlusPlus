@@ -195,6 +195,9 @@ LoadTitlescreenGraphics: ; 42dd (1:42dd)
 	xor a
 	ld [wcc5b], a
 .asm_443b
+IF HACK_SKIP_TITLE == 1
+	jr .asm_4459
+ENDC
 	ld c, $c8
 	call CheckForUserInterruption
 	jr c, .asm_4459
