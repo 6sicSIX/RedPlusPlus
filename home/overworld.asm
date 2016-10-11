@@ -1240,8 +1240,8 @@ CollisionCheckOnLand:: ; 0bd1 (0:0bd1)
 	jr nz,.noCollision ; no collisions when the player's movements are being controlled by the game
 IF HACK_WALK_THROUGH_WALLS == 1
 	ld a,[hJoyInput]
-	and a,B_BUTTON
-	jr nz,.noCollision ;no collisions when holding B
+	and a,A_BUTTON
+	jr nz,.noCollision ;no collisions when holding A
 ENDC
 	ld a,[wd52a] ; the direction that the player is trying to go in
 	ld d,a
