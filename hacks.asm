@@ -11,8 +11,7 @@
 ; 1: fast walking (always run).
 ; 2: normal walking; hold B to run (anywhere)
 ; 3: normal walking; hold B to run (only outdoors/on maps that allow biking)
-;###############################################
-;	ALREADY IMPLIMENTED
+
 HACK_RUNNING_SHOES EQU 2
 
 
@@ -58,7 +57,7 @@ HACK_ENHANCE_BATTLE_SCREEN EQU 1
 ;normally it doesn't show when choosing a mon after yours or an opponent's
 ;has fainted, which is annoying because you can't check stats.
 ;###############################################
-;	NOT IN USE - MAY ALREADY BE IMPLIMENTED
+;	NOT IN USE
 HACK_BATTLE_PARTY_STATS_MENU EQU 1
 
 
@@ -71,7 +70,7 @@ HACK_ADJUST_ITEM_QTY_BY_10 EQU 1
 
 ;when buying items, show how many you already have
 ;###############################################
-;	NOT IN USE - MAY ALREADY BE IMPLIMENTED
+;	NOT IN USE
 HACK_SHOW_OWNED_ITEM_COUNT EQU 1
 
 
@@ -83,7 +82,7 @@ HACK_FULL_TEXT_SPEED_OPTION EQU 1
 
 ;make the default text speed the fastest setting (no delay)
 ;###############################################
-;	NOT IN USE - NOT NEEDED
+;	NOT IN USE
 HACK_DEFAULT_TEXT_SPEED_FAST EQU 1
 
 
@@ -93,12 +92,12 @@ HACK_TEXT_NO_DELAY EQU 1
 
 ;allow to use HMs from the overworld by "talking" to bushes, water, rocks etc.
 ;###############################################
-;	NOT IN USE - ALREADY IMPLIMENTED
+;	NOT IN USE
 HACK_USE_HM_FROM_OVERWORLD EQU 1
 
 ;allow to use HMs from the overworld without HMs or badges
 ;###############################################
-;	NOT IN USE - NOT NEEDED
+;	NOT IN USE
 HACK_USE_HM_FROM_OVERWORLD_DEBUG EQU 1
 
 ; Enable the original debug mode (bit 1 of wd732)
@@ -112,17 +111,23 @@ HACK_USE_HM_FROM_OVERWORLD_DEBUG EQU 1
 HACK_ENABLE_DEBUG_MODE EQU 1
 
 
-;hold B to walk through walls.
+;hold A to walk through walls.
 HACK_WALK_THROUGH_WALLS EQU 1
 
 
 ;enable a new debug menu (not in the original program)
+;###############################################
+;	NOT IN USE
 HACK_NEW_DEBUG_MENU EQU 1
 
 
 ;skip the intro and boot directly to the title screen
 HACK_SKIP_INTRO EQU 1
 
+;###############################################
+;	NOT IN USE
+;skip the title screen and boot directly to the main menun
+HACK_SKIP_TITLE EQU 1
 
 ;try to free some ROM0 space. needed for some hacks,
 ;especially if using several at once.
