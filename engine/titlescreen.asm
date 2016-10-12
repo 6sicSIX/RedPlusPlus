@@ -4,6 +4,9 @@ CopyFixedLengthText: ; 42b1 (1:42b1)
 	jp CopyData
 
 SetDefaultNamesBeforeTitlescreen: ; 42b7 (1:42b7)
+IF HACK_SKIP_TITLE == 1
+	jp MainMenu
+ENDC
 	ld hl, NintenText
 	ld de, wPlayerName ; wd158
 	call CopyFixedLengthText
@@ -22,12 +25,6 @@ SetDefaultNamesBeforeTitlescreen: ; 42b7 (1:42b7)
 	ld [wc0f0], a
 
 LoadTitlescreenGraphics: ; 42dd (1:42dd)
-IF HACK_SKIP_TITLE == 1
-	call EnableLCD
-	call GoPAL_SET
-	call GBPalNormal
-	jp .asm_4459
-ENDC
 	call GBPalWhiteOut
 	ld a, $1
 	ld [H_AUTOBGTRANSFERENABLED], a ; $ffba

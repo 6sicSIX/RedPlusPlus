@@ -10,6 +10,10 @@ MainMenu: ; 5af2 (1:5af2)
 
 	; Predef 52 loads the save from SRAM to RAM
 	predef LoadSAV
+	
+IF HACK_SKIP_TITLE == 1
+jp .comtinue_map
+ENDC
 
 .next0
 	ld c,20
@@ -50,9 +54,6 @@ MainMenu: ; 5af2 (1:5af2)
 	ld de,NewGameText
 	call PlaceString
 .next2
-IF HACK_SKIP_TITLE == 1
-	jr .next5
-ENDC
 	ld hl,wd730
 	res 6,[hl]
 	call UpdateSprites ; OAM?
@@ -115,6 +116,7 @@ ENDC
 	ld a,[wd5a2]
 	and a
 	jp z,SpecialEnterMap
+.comtinue_map
 	ld a,[W_CURMAP] ; map ID
 	cp a,HALL_OF_FAME
 	jp nz,SpecialEnterMap
