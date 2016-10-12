@@ -22,6 +22,12 @@ SetDefaultNamesBeforeTitlescreen: ; 42b7 (1:42b7)
 	ld [wc0f0], a
 
 LoadTitlescreenGraphics: ; 42dd (1:42dd)
+IF HACK_SKIP_TITLE == 1
+	call EnableLCD
+	call GoPAL_SET
+	call GBPalNormal
+	jp .asm_4459
+ENDC
 	call GBPalWhiteOut
 	ld a, $1
 	ld [H_AUTOBGTRANSFERENABLED], a ; $ffba
@@ -195,9 +201,6 @@ LoadTitlescreenGraphics: ; 42dd (1:42dd)
 	xor a
 	ld [wcc5b], a
 .asm_443b
-IF HACK_SKIP_TITLE == 1
-	jr .asm_4459
-ENDC
 	ld c, $c8
 	call CheckForUserInterruption
 	jr c, .asm_4459
